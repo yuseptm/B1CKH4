@@ -141,3 +141,7 @@
     }
   });
 })(jQuery);
+})(jQuery);
+  $(document).ready(function(){
+    $(&#39;#side&#39;).stickyMojo({footerID: &#39;#footer&#39;, contentID: &#39;#main&#39;});
+  });
