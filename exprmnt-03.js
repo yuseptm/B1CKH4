@@ -141,6 +141,3 @@
     }
   });
 })(jQuery);
-$(document).ready(function(){
-    $('#side').stickyMojo({footerID: '#footer', contentID: '#main'});
-  });
