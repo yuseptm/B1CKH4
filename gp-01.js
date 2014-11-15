@@ -1,49 +1,5 @@
 //<![CDATA[	
-
-
-
-
-/*GLOBAL SETTINGS FOR USERS HERE
-All global setting variable must in UPPERCASE*/
-var EXAMPLE_SETTING = 5; //note about this for users easy change
-
-var SLIDER_SPEED = 500; //The speed to animate each slide (in milliseconds)
-var SLIDER_DELAY = 3000; //The delay between slide animations (in milliseconds)
-var SLIDER_KEYS = true; //Enable keyboard (left, right) arrow shortcuts
-var SLIDER_DOTS = true; //Display dot navigation
-var SLIDER_FLUID = false; //Support responsive design. May break non-responsive designs
-var TICKER_DELAY = 7;//Total time to transitions in seconds of ticker (break-news) section
-var CAROUSEL_DELAY = 3;//Total time pause for each image in carousel in seconds
-var AUTO_REPLACE_GOOGLE_MAP = true; // replace place link in post option to google map iframe
-var COMMENT_VIDEO_SHORTCODE = 'video'; // example [video]video-link[/video]
-var COMMENT_IMAGE_SHORTCODE = 'img'; // example [img]image-link[/img]
-
-var lang_Click_to_read = 'Click to read';
-var lang_Read_more = 'Read more';
-var lang_View_all = 'View all';
-var lang_said = 'said:';
-var lang_Related_posts = 'Related posts';
-
-/*FRAMEWORK SETTINGS, CAN NOT REMOVE*/
-var DEFAULT_THUMBNAIL = 'http://2.bp.blogspot.com/-Pr8lML4RdYw/UkuU6YVZDzI/AAAAAAAAG7M/nkjxy84A8Jo/s1600/default-thumbnail.png';// Default image if can not find thumbnail in entry
-var SUMMARY_LEN = 150;// length of summary for feed data
-var JSL_DEF_E_NUM = 5; // default number of entry in json label widget
-var RE_COM_DEF_NUM = 5; // default number entries in recent-comments shortcode
-var RE_POST_DEF_NUM = 5; // default number entries in recent-posts shortcode
-var RAND_POST_DEF_NUM = 5; // default number entries in random-posts shortcode
-var RELATED_POST_DEF_NUM = 4; // default number entries in related post shortcode
-var DAY_FORMAT = 'mm/dd/yyyy';
-var BREADCRUMB_NUMBER_LEVEL = 2;// number level of breadcrumb
-
-
-//emoticons shortcode will be :filename:
-var EMO_ICONS = [
-];
-
-var THEME_DIR = 'ltr';
-$('html[dir="rtl"]').each(function(){
-	THEME_DIR = 'rtl';
-});
+var EXAMPLE_SETTING=5;var SLIDER_SPEED=500;var SLIDER_DELAY=3e3;var SLIDER_KEYS=true;var SLIDER_DOTS=true;var SLIDER_FLUID=false;var TICKER_DELAY=7;var CAROUSEL_DELAY=3;var AUTO_REPLACE_GOOGLE_MAP=true;var COMMENT_VIDEO_SHORTCODE="video";var COMMENT_IMAGE_SHORTCODE="img";var lang_Click_to_read="Click to read";var lang_Read_more="Read more";var lang_View_all="View all";var lang_said="said:";var lang_Related_posts="Related posts";var DEFAULT_THUMBNAIL="http://2.bp.blogspot.com/-Pr8lML4RdYw/UkuU6YVZDzI/AAAAAAAAG7M/nkjxy84A8Jo/s1600/default-thumbnail.png";var SUMMARY_LEN=150;var JSL_DEF_E_NUM=5;var RE_COM_DEF_NUM=5;var RE_POST_DEF_NUM=5;var RAND_POST_DEF_NUM=5;var RELATED_POST_DEF_NUM=4;var DAY_FORMAT="mm/dd/yyyy";var BREADCRUMB_NUMBER_LEVEL=2;var EMO_ICONS=[];var THEME_DIR="ltr";$('html[dir="rtl"]').each(function(){THEME_DIR="rtl"})
 window.selectnav=function(){return function(p,q){var a,h=function(b){var c;b||(b=window.event);b.target?c=b.target:b.srcElement&&(c=b.srcElement);3===c.nodeType&&(c=c.parentNode);c.value&&(window.location.href=c.value)},k=function(b){b=b.nodeName.toLowerCase();return"ul"===b||"ol"===b},l=function(b){for(var c=1;document.getElementById("selectnav"+c);c++);return b?"selectnav"+c:"selectnav"+(c-1)},n=function(b){g++;var c=b.children.length,a="",d="",f=g-1;if(c){if(f){for(;f--;)d+=r;d+=" "}for(f=0;f<
 c;f++){var e=b.children[f].children[0];if("undefined"!==typeof e){var h=e.innerText||e.textContent,i="";j&&(i=-1!==e.className.search(j)||-1!==e.parentElement.className.search(j)?m:"");s&&!i&&(i=e.href===document.URL?m:"");a+='<option value="'+e.href+'" '+i+">"+d+h+"</option>";t&&(e=b.children[f].children[1])&&k(e)&&(a+=n(e))}}1===g&&o&&(a='<option value="">'+o+"</option>"+a);1===g&&(a='<select class="selectnav" id="'+l(!0)+'">'+a+"</select>");g--;return a}};if((a=document.getElementById(p))&&k(a)){document.documentElement.className+=
 " js";var d=q||{},j=d.activeclass||"active",s="boolean"===typeof d.autoselect?d.autoselect:!0,t="boolean"===typeof d.nested?d.nested:!0,r=d.indent||"\u2192",o=d.label||"&#8801; Menu",g=0,m=" selected ";a.insertAdjacentHTML("afterend",n(a));a=document.getElementById(l());a.addEventListener&&a.addEventListener("change",h);a.attachEvent&&a.attachEvent("onchange",h)}}}();
